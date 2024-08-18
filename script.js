@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const removeButton = newDiv.querySelector(`#removeDivBtn${n}`);
         const paraDecoAfterDone = newDiv.querySelector(`#lineThroughPara${n}`);
 
+        let markBtnState = false; 
+
         markButton.addEventListener('click', () => {
             if (!markBtnState) {
                 markButton.classList.remove("bg-slate-100", "border-blue-600");
